@@ -23,6 +23,11 @@ body {
   line-height: 100%;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -112,7 +117,6 @@ body {
 
 .banner {
   background-color: var(--accent-background);
-  margin-bottom: var(--section-indent);
 }
 
 .banner-box {
@@ -148,9 +152,12 @@ body {
 }
 
 /*Description section*/
+.about {
+  padding-bottom: 0;
+}
+
 .about-list {
   display: flex;
-  margin-bottom: var(--section-indent);
 }
 
 .about-list__item {
@@ -180,11 +187,6 @@ body {
 }
 
 /*About work section*/
-.work {
-  margin-bottom: var(--section-indent);
-  height: 368px;
-}
-
 .work-header {
   font-size: 36px;
   letter-spacing: 0.03em;
@@ -201,17 +203,12 @@ body {
 }
 
 /*About team section*/
-.team {
-  height: 648px;
-}
-
 .team-header {
   font-size: 36px;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--title-color);
   margin-bottom: 50px;
-  padding-top: var(--section-indent);
 }
 
 .team-list {
@@ -243,15 +240,10 @@ body {
 }
 
 /*Unique page portfolio.html content*/
-.filter {
-  margin-top: var(--section-indent);
-}
 
 .filter-list {
   display: flex;
   justify-content: center;
-  height: 54px;
-  margin-bottom: 34px;
 }
 
 .filter-item:not(:last-child) {
@@ -275,18 +267,20 @@ body {
   color: #fff;
 }
 
+.card {
+  padding-top: 0;
+}
+
 .card-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: var(--section-indent);
 }
 
-.card-lis__item {
-  height: 404px;
+.card-list__item {
   margin-right: 30px;
 }
 
-.item:nth-child(3n) {
+.card-list__item:nth-child(3n) {
   margin-right: 0;
 }
 
