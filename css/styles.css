@@ -14,7 +14,6 @@
   --accent-background: #2f303a;
   --title-color: #212121;
   --descr-text-color: #757575;
-  --section-indent: 94px;
 }
 
 body {
@@ -53,7 +52,7 @@ body {
   font-family: Raleway, sans-serif;
   font-size: 26px;
   color: #000000;
-  margin-right: var(--section-indent);
+  margin-right: 93px;
 }
 
 .web-logo {
@@ -72,6 +71,10 @@ body {
 .nav-link:hover,
 .nav-link:focus {
   color: var(--accent-color);
+}
+
+.contacts-icons {
+  /* display: inline-flex; */
 }
 
 .contacts-email {
@@ -98,6 +101,10 @@ body {
   margin-bottom: 28px;
 }
 
+.footer__links {
+  display: flex;
+}
+
 .studio-logo {
   color: #fff;
 }
@@ -117,6 +124,13 @@ body {
 
 .banner {
   background-color: var(--accent-background);
+  min-height: 600px;
+  max-width: 1600px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4)),
+    url(../images/Banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .banner-box {
@@ -218,6 +232,8 @@ body {
 
 .team-item {
   text-align: center;
+  box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
+  height: 428px;
 }
 
 .team-item:not(:last-child) {
@@ -265,6 +281,7 @@ body {
 .filter-btn:focus {
   background-color: var(--accent-color);
   color: #fff;
+  box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.7);
 }
 
 .card {
@@ -278,10 +295,19 @@ body {
 
 .card-list__item {
   margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.card-list__item:nth-child(n + 7) {
+  margin-bottom: 0;
 }
 
 .card-list__item:nth-child(3n) {
   margin-right: 0;
+}
+
+.card-list__item:hover {
+  box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.8);
 }
 
 .item-desc__text {
