@@ -31,18 +31,18 @@
       </div>
 
       <div class="page-header__contacts contacts" aria-label="contacts">
-        <svg class="contacts-icons" widht="16" height="12">
-          <use href="./images/icons.svg#icon-envelope"></use>
-        </svg>
-        <a href="mailto:info@devstudio.com" class="contacts-email contact"
-          >info@devstudio.com</a
-        >
-        <svg class="contacts-icons" widht="10" height="16">
+        <a href="mailto:info@devstudio.com" class="contacts-email contact"> 
+          <svg class="contact-icon__envelope" >
+            <use href="./images/icons.svg#icon-envelope"></use>
+          </svg>
+         <span class="phone">info@devstudio.com</span>
+        </a>
+        
+        <a href="tel:+380961111111" class="contacts-phone contact">
+          <svg class="contact-icon__smartphone" >
           <use href="./images/icons.svg#icon-smartphone"></use>
-        </svg>
-        <a href="tel:+380961111111" class="contacts-phone contact"
-          >+38 096 111 11 11</a
-        >
+          </svg>
+          <span class="phone">+38 096 111 11 11</span></a>
       </div>
     </header>
 
@@ -63,9 +63,11 @@
       <section class="about section">
         <ul class="about-list container">
           <li class="about-list__item item">
-            <svg class="" widht="" height="">
+            <div class="item-icon__box">
+             <svg class="item-icon">
               <use href="./images/icons.svg#icon-Group"></use>
-            </svg>
+             </svg>
+            </div>
             <p class="item-header">УВАГА ДО ДЕТАЛЕЙ</p>
             <p class="item-descr">
               Ідейні міркування, і навіть початок повсякденної роботи з
@@ -73,9 +75,11 @@
             </p>
           </li>
           <li class="about-list__item item">
-            <svg class="" widht="" height="">
-              <use href="./images/icons.svg#icon-Clock"></use>
-            </svg>
+            <div class="item-icon__box">
+              <svg class="item-icon">
+                <use href="./images/icons.svg#icon-Clock"></use>
+              </svg>
+            </div>
             <p class="item-header">ПУНКТУАЛЬНІСТЬ</p>
             <p class="item-descr">
               Завдання організації, особливо рамки і місце навчання кадрів тягне
@@ -83,18 +87,22 @@
             </p>
           </li>
           <li class="about-list__item item">
-            <svg class="" widht="" height="">
-              <use href="./images/icons.svg#icon-Comp"></use>
-            </svg>
+            <div class="item-icon__box">
+              <svg class="item-icon" >
+                <use href="./images/icons.svg#icon-Comp"></use>
+              </svg>
+            </div>
             <p class="item-header">ПЛАНУВАННЯ</p>
             <p class="item-descr">
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </li>
           <li class="about-list__item item">
-            <svg class="" widht="" height="">
-              <use href="./images/icons.svg#icon-astronaut"></use>
-            </svg>
+            <div class="item-icon__box">
+              <svg class="item-icon" >
+                <use href="./images/icons.svg#icon-astronaut"></use>
+              </svg>
+            </div>
             <p class="item-header">СУЧАСНІ ТЕХНОЛОГІЇ</p>
             <p class="item-descr">
               Значимість цих проблем настільки очевидна, що реалізація планових
@@ -144,30 +152,30 @@
               class="team-photo"
               width="270"
             />
-            <p class="team-item__descr team-name">Ігор Дем'яненко</p>
+            <p class="team-item__descr team-name">Ігор Демяненко</p>
             <p class="team-item__descr team-post">Product Designer</p>
-            <div class="footer__links">
-          <a href="https://www.instagram.com/" class="footer__link">
-            <svg class="contacts-icons" widht="20" height="20">
-              <use href="./images/icons.svg#icon-instagram"></use>
-            </svg>
-          </a>
-          <a href="http://twitter.com" class="footer__link">
-            <svg class="contacts-icons" widht="20" height="20">
-              <use href="./images/icons.svg#icon-twitter-1"></use>
-            </svg>
-          </a>
-          <a href=https://www.facebook.com/ class="footer__link">
-            <svg class="contacts-icons" widht="20" height="20">
-              <use href="./images/icons.svg#icon-facebook-1"></use>
-            </svg>
-          </a>
-          <a href="https://linkedin.com/" class="footer__link">
-            <svg class="contacts-icons" widht="20" height="20">
-              <use href="./images/icons.svg#icon-linkedin"></use>
-            </svg>
-          </a>
-        </div>
+            <div class="team-links">
+               <a href="https://www.instagram.com/" class="team-link">
+                   <svg class="team-icon">
+                     <use href="./images/icons.svg#icon-instagram"></use>
+                   </svg>
+               </a>
+               <a href="http://twitter.com" class="team-link">
+                  <svg class="team-icon">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+               </a>
+               <a href=https://www.facebook.com/ class="team-link">
+                 <svg class="team-icon">
+                   <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+               </a>
+               <a href="https://linkedin.com/" class="team-link">
+                  <svg class="team-icon">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+               </a>
+            </div>
           </li>
           <li class="team-item">
             <img
@@ -178,28 +186,28 @@
             />
             <p class="team-item__descr team-name">Ольга Рєпіна</p>
             <p class="team-item__descr team-post">Frontend Developer</p>
-            <div class="footer__links">
-          <a href="https://www.instagram.com/" class="footer__link">
-            <svg class="contacts-icons" widht="20" height="20">
+            <div class="team-links">
+          <a href="https://www.instagram.com/" class="team-link" target="_blank">
+            <svg class="team-icon" >
               <use href="./images/icons.svg#icon-instagram"></use>
             </svg>
           </a>
-          <a href="http://twitter.com" class="footer__link">
-            <svg class="contacts-icons" widht="20" height="20">
+          <a href="http://twitter.com" class="team-link" target="_blank">
+            <svg class="team-icon" >
               <use href="./images/icons.svg#icon-twitter-1"></use>
             </svg>
           </a>
-          <a href=https://www.facebook.com/ class="footer__link">
-            <svg class="contacts-icons" widht="20" height="20">
+          <a href=https://www.facebook.com/ class="team-link" target="_blank">
+            <svg class="team-icon" >
               <use href="./images/icons.svg#icon-facebook-1"></use>
             </svg>
           </a>
-          <a href="https://linkedin.com/" class="footer__link">
-            <svg class="contacts-icons" widht="20" height="20">
+          <a href="https://linkedin.com/" class="team-link" target="_blank">
+            <svg class="team-icon" >
               <use href="./images/icons.svg#icon-linkedin"></use>
             </svg>
           </a>
-        </div>
+            </div>
           </li>
           <li class="team-item">
             <img
@@ -210,28 +218,28 @@
             />
             <p class="team-item__descr team-name">Микола Тарасов</p>
             <p class="team-item__descr team-post">Marketing</p>
-            <div class="footer__links">
-          <a href="https://www.instagram.com/" class="footer__link">
-            <svg class="contacts-icons" widht="20" height="20">
+            <div class="team-links">
+          <a href="https://www.instagram.com/" class="team-link">
+            <svg class="team-icon" >
               <use href="./images/icons.svg#icon-instagram"></use>
             </svg>
           </a>
-          <a href="http://twitter.com" class="footer__link">
-            <svg class="contacts-icons" widht="20" height="20">
+          <a href="http://twitter.com" class="team-link">
+            <svg class="team-icon" >
               <use href="./images/icons.svg#icon-twitter-1"></use>
             </svg>
           </a>
-          <a href=https://www.facebook.com/ class="footer__link">
-            <svg class="contacts-icons" widht="20" height="20">
+          <a href=https://www.facebook.com/ class="team-link">
+            <svg class="team-icon">
               <use href="./images/icons.svg#icon-facebook-1"></use>
             </svg>
           </a>
-          <a href="https://linkedin.com/" class="footer__link">
-            <svg class="contacts-icons" widht="20" height="20">
+          <a href="https://linkedin.com/" class="team-link">
+            <svg class="team-icon" >
               <use href="./images/icons.svg#icon-linkedin"></use>
             </svg>
           </a>
-        </div>
+            </div>
           </li>
           <li class="team-item">
             <img
@@ -242,67 +250,82 @@
             />
             <p class="team-item__descr team-name">Михайло Єрмаков</p>
             <p class="team-item__descr team-post">UI Designer</p>
-            <div class="footer__links">
-          <a href="https://www.instagram.com/" class="footer__link">
-            <svg class="contacts-icons" widht="20" height="20">
+            <div class="team-links">
+          <a href="https://www.instagram.com/" class="team-link">
+            <svg class="team-icon" >
               <use href="./images/icons.svg#icon-instagram"></use>
             </svg>
           </a>
-          <a href="http://twitter.com" class="footer__link">
-            <svg class="contacts-icons" widht="20" height="20">
+          <a href="http://twitter.com" class="team-link">
+            <svg class="team-icon" >
               <use href="./images/icons.svg#icon-twitter-1"></use>
             </svg>
           </a>
-          <a href=https://www.facebook.com/ class="footer__link">
-            <svg class="contacts-icons" widht="20" height="20">
+          <a href=https://www.facebook.com/ class="team-link">
+            <svg class="team-icon" >
               <use href="./images/icons.svg#icon-facebook-1"></use>
             </svg>
           </a>
-          <a href="https://linkedin.com/" class="footer__link">
-            <svg class="contacts-icons" widht="20" height="20">
+          <a href="https://linkedin.com/" class="team-link">
+            <svg class="team-icon">
               <use href="./images/icons.svg#icon-linkedin"></use>
             </svg>
           </a>
-        </div>
+            </div>
           </li>
         </ul>
       </section>
       <!-- Clients section -->
-      <section class="section">
+      <section class="section clients">
 <div class="container">
-  <svg class="" widht="" height="">
+  <h2 class="clients-header">Постійні клієнти</h2>
+  <ul class="clients-list">
+    <li class="client-item"><a href="" class="client-link">
+      <svg class="client-icon" >
               <use href="./images/icons.svg#icon-Union"></use>
             </svg>
-            <svg class="" widht="" height="">
+    </a>
+  </li>
+    <li class="client-item"><a href="" class="client-link">
+      <svg class="client-icon" >
               <use href="./images/icons.svg#icon-company"></use>
             </svg>
-            <svg class="" widht="" height="">
+    </a></li>
+    <li class="client-item"><a href="" class="client-link">
+      <svg class="client-icon" >
               <use href="./images/icons.svg#icon-group-1"></use>
             </svg>
-            <svg class="" widht="" height="">
+    </a></li>
+    <li class="client-item"><a href="" class="client-link">
+      <svg class="client-icon" >
               <use href="./images/icons.svg#icon-group-2"></use>
             </svg>
-            <svg class="" widht="" height="">
+    </a></li>
+    <li class="client-item"><a href="" class="client-link">
+      <svg class="client-icon" >
               <use href="./images/icons.svg#icon-group-3"></use>
             </svg>
-            <svg class="" widht="" height="">
+    </a></li>
+    <li class="client-item"><a href="" class="client-link">
+      <svg class="client-icon">
               <use href="./images/icons.svg#icon-group-4"></use>
             </svg>
+    </a></li>
+  </ul>
+
 </div>
       </section>
     </main>
 
     <!-- Page footer -->
      <footer class="footer">
-      <div class="container">
+      <div class="container footer-box">
         <div class="footer-logo">
-          <a href="/index.html" class="page-header__logo logo"
+          <a href="/index.html" class="page-footer__logo logo"
             ><span class="web-logo">Web</span
-            ><span class="studio-logo">Studio</span></a
-          >
-        </div>
-
-        <address class="footer-address">
+            ><span class="studio-logo">Studio</span>
+            </a>
+           <address class="footer-address">
           <span class="footer-address__office"
             >м. Київ, пр-т Лесі Українки, 26</span
           >
@@ -310,27 +333,31 @@
           info@devstudio.com <br />
           +38 096 111 11 11
         </address>
-        <div class="footer__links">
-          <a href="https://www.instagram.com/" class="footer__link">
-            <svg class="contacts-icons" widht="20" height="20">
+        </div>
+        <div class=" footer-links">
+          <h3 class="footer-links__header">Приєднуйтись</h3>
+          <ul class="footer-links__list">
+            <li class="footer-links__item"><a href="https://www.instagram.com/" class="footer__link ">
+             <svg class="footer-icon">
               <use href="./images/icons.svg#icon-instagram"></use>
-            </svg>
-          </a>
-          <a href="http://twitter.com" class="footer__link">
-            <svg class="contacts-icons" widht="20" height="20">
-              <use href="./images/icons.svg#icon-twitter-1"></use>
-            </svg>
-          </a>
-          <a href=https://www.facebook.com/ class="footer__link">
-            <svg class="contacts-icons" widht="20" height="20">
+              </svg>
+            </a></li>
+            <li class="footer-links__item"><a href="http://twitter.com" class="footer__link ">
+              <svg class="footer-icon">
+                <use href="./images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </a></li>
+            <li class="footer-links__item"><a href=https://www.facebook.com/ class="footer__link ">
+             <svg class="footer-icon" >
               <use href="./images/icons.svg#icon-facebook-1"></use>
-            </svg>
-          </a>
-          <a href="https://linkedin.com/" class="footer__link">
-            <svg class="contacts-icons" widht="20" height="20">
+             </svg>
+            </a></li>
+            <li class="footer-links__item"><a href="https://linkedin.com/" class="footer__link ">
+              <svg class="footer-icon" >
               <use href="./images/icons.svg#icon-linkedin"></use>
             </svg>
-          </a>
+            </a></li>
+          </ul>
         </div>
       </div>
     </footer>
